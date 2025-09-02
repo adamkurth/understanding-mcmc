@@ -1,3 +1,3 @@
 ## understanding-mcmc
 
-![](/Users/adamkurth/Documents/vscode/code/understanding-series/understanding-mcmc/em.gif)
+![em-gif](/Users/adamkurth/Documents/vscode/code/understanding-series/understanding-mcmc/em.gif)
