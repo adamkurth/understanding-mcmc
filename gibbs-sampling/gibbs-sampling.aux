@@ -1,0 +1,65 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Motivation}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}The Algorithm}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Systematic-Scan Gibbs Sampler}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Gibbs Sampling}}{2}{algorithm.1}\protected@file@percent }
+\newlabel{alg:gibbs}{{1}{2}{Systematic-Scan Gibbs Sampler}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Why It Works}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Connection to Metropolis--Hastings}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Example 1: Bivariate Normal}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Setup}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Full Conditionals}{3}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:cond1}{{1}{3}{Full Conditionals}{equation.1}{}}
+\newlabel{eq:cond2}{{2}{3}{Full Conditionals}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Implementation}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:bivariate}: Gibbs mechanics.}{4}{section*.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {(a)}~Gibbs staircase on the joint density contours of a bivariate normal with $\rho = 0.7$. Green segments update $\theta _1 \mid \theta _2$; blue segments update $\theta _2 \mid \theta _1$. \textbf  {(b)}~Trace plot of $\theta _1$. \textbf  {(c)}~Trace plot of $\theta _2$. \textbf  {(d)}~Marginal histograms vs.\ true $N(0,1)$ density. }}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:bivariate}{{1}{4}{\textbf {(a)}~Gibbs staircase on the joint density contours of a bivariate normal with $\rho = 0.7$. Green segments update $\theta _1 \mid \theta _2$; blue segments update $\theta _2 \mid \theta _1$. \textbf {(b)}~Trace plot of $\theta _1$. \textbf {(c)}~Trace plot of $\theta _2$. \textbf {(d)}~Marginal histograms vs.\ true $N(0,1)$ density}{figure.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:steps}: Step-by-step visualization.}{5}{section*.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Six sequential Gibbs iterations for the bivariate normal. Each panel adds one iteration: green = $\theta _1 \mid \theta _2$ update, blue = $\theta _2 \mid \theta _1$ update, orange star = new sample, red triangle = starting point. The characteristic horizontal--vertical staircase emerges.}}{5}{figure.2}\protected@file@percent }
+\newlabel{fig:steps}{{2}{5}{Six sequential Gibbs iterations for the bivariate normal. Each panel adds one iteration: green = $\theta _1 \mid \theta _2$ update, blue = $\theta _2 \mid \theta _1$ update, orange star = new sample, red triangle = starting point. The characteristic horizontal--vertical staircase emerges}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}The Role of Correlation: Why Gibbs Slows Down}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Quantifying the Slowdown}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:correlation}: Correlation effect on mixing.}{6}{section*.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {(a)}~$\rho = 0.2$: fast mixing, broad staircase. \textbf  {(b)}~$\rho = 0.7$: moderate mixing. \textbf  {(c)}~$\rho = 0.95$: slow mixing, tight zig-zag. \textbf  {(d)}~Autocorrelation decays slowly with increasing $\rho $. }}{6}{figure.3}\protected@file@percent }
+\newlabel{fig:correlation}{{3}{6}{\textbf {(a)}~$\rho = 0.2$: fast mixing, broad staircase. \textbf {(b)}~$\rho = 0.7$: moderate mixing. \textbf {(c)}~$\rho = 0.95$: slow mixing, tight zig-zag. \textbf {(d)}~Autocorrelation decays slowly with increasing $\rho $}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Example 2: Bayesian Normal Model}{6}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Model}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Full Conditionals}{7}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{$\mu \mid \sigma ^2, y$.}{7}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{$\sigma ^2 \mid \mu , y$.}{7}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:normal}: Gibbs applied to the normal model.}{7}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {(a)}~Trace of $\mu $ (true value = 5, dashed red). \textbf  {(b)}~Trace of $\sigma ^2$ (true value = 4). \textbf  {(c)}~Joint posterior samples with Gibbs path overlay. \textbf  {(d)}~Marginal posterior of $\mu $ (histogram) vs.\ normal approximation. }}{8}{figure.4}\protected@file@percent }
+\newlabel{fig:normal}{{4}{8}{\textbf {(a)}~Trace of $\mu $ (true value = 5, dashed red). \textbf {(b)}~Trace of $\sigma ^2$ (true value = 4). \textbf {(c)}~Joint posterior samples with Gibbs path overlay. \textbf {(d)}~Marginal posterior of $\mu $ (histogram) vs.\ normal approximation}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Example 3: Hierarchical Normal Model}{8}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}The ``Eight Schools'' Model (BDA3, Chapter 5)}{8}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Model Specification}{9}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Full Conditionals}{9}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{$\theta _j \mid \mu , \tau ^2, y_j$.}{9}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{$\mu \mid \boldsymbol  {\theta }, \tau ^2$.}{9}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{$\tau ^2 \mid \boldsymbol  {\theta }, \mu $.}{9}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:hierarchical}: Hierarchical model results.}{10}{section*.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {(a)}~Trace plots for $\theta _1, \theta _3, \theta _5, \theta _7$. \textbf  {(b)}~Posterior of $\mu $ (population mean); raw mean $\bar  {y}$ in orange. \textbf  {(c)}~Posterior of $\tau $ (between-school SD). \textbf  {(d)}~Shrinkage: raw $y_j$ (red crosses) pulled toward the posterior means (blue dots) with 95\% credible intervals. }}{10}{figure.5}\protected@file@percent }
+\newlabel{fig:hierarchical}{{5}{10}{\textbf {(a)}~Trace plots for $\theta _1, \theta _3, \theta _5, \theta _7$. \textbf {(b)}~Posterior of $\mu $ (population mean); raw mean $\bar {y}$ in orange. \textbf {(c)}~Posterior of $\tau $ (between-school SD). \textbf {(d)}~Shrinkage: raw $y_j$ (red crosses) pulled toward the posterior means (blue dots) with 95\% credible intervals}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Convergence Diagnostics}{10}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Visual Inspection and Burn-In}{11}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}The Gelman--Rubin Diagnostic $\hat  {R}$}{11}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Effective Sample Size}{11}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:diagnostics}: Convergence diagnostics.}{11}{section*.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {(a)}~Four chains from dispersed starts, all converging. \textbf  {(b)}~Running means stabilize near the true mean (0). \textbf  {(c)}~$\hat  {R}$ approaches 1.0 rapidly (orange dashed: 1.1 threshold). \textbf  {(d)}~Autocorrelation function for Chain~1 (post-burn-in). }}{12}{figure.6}\protected@file@percent }
+\newlabel{fig:diagnostics}{{6}{12}{\textbf {(a)}~Four chains from dispersed starts, all converging. \textbf {(b)}~Running means stabilize near the true mean (0). \textbf {(c)}~$\hat {R}$ approaches 1.0 rapidly (orange dashed: 1.1 threshold). \textbf {(d)}~Autocorrelation function for Chain~1 (post-burn-in)}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Where Gibbs Sampling Fails}{12}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Multimodality}{12}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Strong Posterior Correlations}{13}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Intractable Full Conditionals}{13}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:failure}: Failure modes.}{13}{section*.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {(a)}~Bimodal target with modes at $(\pm 3, \pm 3)$: Gibbs can mix (slowly) between modes. \textbf  {(b)}~Modes at $(\pm 5, \pm 5)$: Gibbs is completely stuck in one mode. \textbf  {(c)}~Trace plot showing the sampler trapped near $\theta _1 = 5$. \textbf  {(d)}~ESS (as \% of $N$) plummets with increasing $\rho $. }}{14}{figure.7}\protected@file@percent }
+\newlabel{fig:failure}{{7}{14}{\textbf {(a)}~Bimodal target with modes at $(\pm 3, \pm 3)$: Gibbs can mix (slowly) between modes. \textbf {(b)}~Modes at $(\pm 5, \pm 5)$: Gibbs is completely stuck in one mode. \textbf {(c)}~Trace plot showing the sampler trapped near $\theta _1 = 5$. \textbf {(d)}~ESS (as \% of $N$) plummets with increasing $\rho $}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Comparison with Other Methods}{14}{section.9}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of Monte Carlo sampling methods.}}{14}{table.1}\protected@file@percent }
+\newlabel{tab:compare}{{1}{14}{Comparison of Monte Carlo sampling methods}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Key Takeaways}{15}{section.10}\protected@file@percent }
+\gdef \@abspage@last{15}

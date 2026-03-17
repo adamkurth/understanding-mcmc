@@ -1,0 +1,40 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Motivation}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}The Algorithm}{1}{section.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Rejection Sampling}}{1}{algorithm.1}\protected@file@percent }
+\newlabel{alg:reject}{{1}{1}{The Algorithm}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Why It Works}{1}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Implementation in \textsf  {R}}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Example 1: $\mathrm  {Beta}(2.7,\, 6.3)$ via $\mathrm  {Uniform}(0,1)$}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Setup.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sampling.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:envelopes}(a): Envelope and dart-board visualization.}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:envelopes}(b): Histogram vs.\ true density.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Example 2: $N(0,1)$ via $t_2$}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Setup.}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:envelopes}(c): Envelope comparison.}{3}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:envelopes}(d): Histogram validation.}{3}{section*.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {(a)}~Dart-board visualization for the $\mathrm  {Beta}(2.7,6.3)$ target with a $\mathrm  {Uniform}(0,1)$ proposal. Green points fall under $f(x)$ and are accepted; red points are rejected. \textbf  {(b)}~Histogram of accepted samples overlaid with the true Beta density. \textbf  {(c)}~Envelope $c\cdot t_2(x)$ over the standard normal target $\phi (x)$; the shaded region is wasted probability. \textbf  {(d)}~Histogram of accepted samples vs.\ $\phi (x)$. }}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:envelopes}{{1}{3}{\textbf {(a)}~Dart-board visualization for the $\mathrm {Beta}(2.7,6.3)$ target with a $\mathrm {Uniform}(0,1)$ proposal. Green points fall under $f(x)$ and are accepted; red points are rejected. \textbf {(b)}~Histogram of accepted samples overlaid with the true Beta density. \textbf {(c)}~Envelope $c\cdot t_2(x)$ over the standard normal target $\phi (x)$; the shaded region is wasted probability. \textbf {(d)}~Histogram of accepted samples vs.\ $\phi (x)$}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Figure~\ref {fig:efficiency}: Efficiency vs.\ Envelope Constant}{4}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Acceptance rate $1/c$ as a function of the envelope constant~$c$. The dashed vertical line marks the optimal $c^* \approx 2.67$ for the $\mathrm  {Beta}(2.7,6.3)$/Uniform example. Larger~$c$ wastes more proposals.}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:efficiency}{{2}{4}{Acceptance rate $1/c$ as a function of the envelope constant~$c$. The dashed vertical line marks the optimal $c^* \approx 2.67$ for the $\mathrm {Beta}(2.7,6.3)$/Uniform example. Larger~$c$ wastes more proposals}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Figure~\ref {fig:steps}: Step-by-Step Visualization}{4}{subsection.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Six sequential iterations of rejection sampling for $\mathrm  {Beta}(2.7,6.3)$. Each panel adds one proposal: a star marks the current draw, with an arrow from the $x$-axis showing its height $u \cdot c$. Green~=~accepted (under the curve), red~=~rejected (above). Previous points accumulate across panels.}}{5}{figure.3}\protected@file@percent }
+\newlabel{fig:steps}{{3}{5}{Six sequential iterations of rejection sampling for $\mathrm {Beta}(2.7,6.3)$. Each panel adds one proposal: a star marks the current draw, with an arrow from the $x$-axis showing its height $u \cdot c$. Green~=~accepted (under the curve), red~=~rejected (above). Previous points accumulate across panels}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}The 2D Picture: Contour Visualization}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:contour2d}(a): 2D accept/reject.}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Figure~\ref {fig:contour2d}(b): Curse of dimensionality.}{5}{section*.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {(a)}~Rejection sampling on a bivariate $N(\mathbf  {0},I_2)$ target with a uniform proposal on $[-3,3]^2$. Accepted samples (green) concentrate inside the density contours; rejected samples (red) fill the wasted corners. \textbf  {(b)}~Acceptance rate decays exponentially with dimension: at $d=10$ it is below $0.02\%$. }}{6}{figure.4}\protected@file@percent }
+\newlabel{fig:contour2d}{{4}{6}{\textbf {(a)}~Rejection sampling on a bivariate $N(\mathbf {0},I_2)$ target with a uniform proposal on $[-3,3]^2$. Accepted samples (green) concentrate inside the density contours; rejected samples (red) fill the wasted corners. \textbf {(b)}~Acceptance rate decays exponentially with dimension: at $d=10$ it is below $0.02\%$}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Where Rejection Sampling Fails}{6}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Failure Mode: No Finite Envelope Exists}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example.}{6}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Fix.}{6}{section*.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {(a)}~Attempting to envelope the Cauchy target (red) with a scaled normal (blue dashed). The shaded regions mark where the envelope is violated---no finite $c$ fixes this. \textbf  {(b)}~The ratio $f(x)/g(x) = \mathrm  {Cauchy}(x)/\phi (x)$ diverges in the tails, confirming the impossibility. }}{7}{figure.5}\protected@file@percent }
+\newlabel{fig:rs-failure}{{5}{7}{\textbf {(a)}~Attempting to envelope the Cauchy target (red) with a scaled normal (blue dashed). The shaded regions mark where the envelope is violated---no finite $c$ fixes this. \textbf {(b)}~The ratio $f(x)/g(x) = \mathrm {Cauchy}(x)/\phi (x)$ diverges in the tails, confirming the impossibility}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Key Takeaways}{7}{section.6}\protected@file@percent }
+\gdef \@abspage@last{7}
